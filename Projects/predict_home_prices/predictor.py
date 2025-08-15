@@ -16,8 +16,8 @@ plt.scatter(house_sizes, house_prices, marker ='o', color ='blue')
 plt.title('House Prices vs. House Size')
 plt.xlabel('House Size (sq.ft)')
 plt.ylabel('House Price ($)')
-plt.show()
 plt.savefig('plots/house_price.png')
+plt.show()
 
 # split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(house_sizes, house_prices, test_size=0.2, random_state=42)
@@ -40,7 +40,5 @@ plt.xlabel('House Size (sq ft)')
 plt.ylabel('House Price (Millions $)')
 plt.title('House Size vs Price')
 plt.legend()
-plt.show()
-
-# Export the plot as an image file
 plt.savefig('plots/house_price_prediction.png')
+plt.show()
